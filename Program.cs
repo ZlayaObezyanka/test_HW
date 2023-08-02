@@ -4,13 +4,13 @@
 
 
 
-void print(string[] arr)
+void print(string[] arr) 
 { 
     //foreach (var item in arr)
         Console.WriteLine(string.Join(" ", arr));
 }
 
-string[] filling(string[] test_arr)
+string[] filling(string[] test_arr) // заполнение массива произвольными параметрами пользователем
 {
     Console.Clear();
     Console.WriteLine("Заполните текстовый массив: ");
@@ -21,7 +21,7 @@ string[] filling(string[] test_arr)
     return test_arr;
 }
 
-void check_arr(string[] test_arr)
+void check_arr(string[] test_arr) //проверка основного массива на колличчество строк с нужными параметрами
 {
     string[] temp = new string[0];
 
@@ -33,14 +33,14 @@ void check_arr(string[] test_arr)
         else 
         {
             ++i;
-            temp = new string[i];
+            temp = new string[i]; // в дальнейшем это массив с новыми параметрами. Идет новое объявление участка памяти с нужным колличеством байт
         }
     }
-    temp = record(test_arr, temp);
+    temp = record(test_arr, temp); 
     print(temp);
 }
 
-string[] record(string[] test_arr, string[] temp)
+string[] record(string[] test_arr, string[] temp) // запись нужных параметров в новый массив
 {
     int i = 0;
     foreach (var item in test_arr)
