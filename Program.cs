@@ -1,9 +1,5 @@
 ﻿
 
-
-
-
-
 void print(string[] arr) 
 { 
     //foreach (var item in arr)
@@ -55,9 +51,6 @@ string[] record(string[] test_arr, string[] temp) // запись нужных �
     }
     return temp;
 }
-
-
-
 
 
 Console.WriteLine("Какое колличество слов вы хотите ввести в массив?");
